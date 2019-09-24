@@ -1,3 +1,4 @@
+<!--
 /**
  * Copyright (c) Codice Foundation
  *
@@ -12,23 +13,17 @@
  * <http://www.gnu.org/licenses/lgpl.html>.
  *
  **/
+ -->
+<!DOCTYPE html>
+<html style="font-size: 16px; height: 100%; width: 100%;">
+  <head>
+    <title>Logviewer Title</title>
+    <meta http-equiv="x-ua-compatible" content="IE=Edge" />
+    <meta charset="UTF-8" />
+  </head>
 
-require("es6-promise").polyfill();
-require("isomorphic-fetch");
-
-// retrieves logs from the endpoint
-export const getLogs = done => {
-  const endpoint =
-    "/admin/jolokia/exec/org.codice.ddf.platform.logging.LoggingService:service=logging-service/retrieveLogEvents";
-
-  window
-    .__global__fetch(endpoint, {
-      credentials: "same-origin",
-      headers: {
-        "X-Requested-With": "XMLHttpRequest"
-      }
-    })
-    .then(res => res.json())
-    .then(json => done(null, json.value))
-    .catch(done);
-};
+  <body style="height: 100%; width: 100%; overflow: hidden;">
+    <div id="root" style="height: 100%; width: 100%; overflow: hidden;"></div>
+    <script src="bundle.js"></script>
+  </body>
+</html>
