@@ -1,5 +1,5 @@
 {
-  "name": "logviewer-ui",
+  "name": "@connexta/logviewer",
   "author": "Codice",
   "description": "UI for viewing the Karaf Logs in the Admin UI",
   "version": "0.1.0",
@@ -9,7 +9,7 @@
     "start": "hotreloadify src/main/webapp/js/index.js --proxy=https://localhost:8993 --open",
     "test": "globstar -- browserify -d ./src/test/js/*.js -o ./target/test.js && tap ./target/test.js",
     "prebuild": "mkdirp ./target/webapp",
-    "build": "browserify src/main/webapp/js/index.js > ./target/webapp/bundle.js && ace package",
+    "build": "browserify src/main/webapp/js/index.js > ./target/webapp/bundle.js",
     "clean": "ace clean"
   },
   "sideEffects": false,
