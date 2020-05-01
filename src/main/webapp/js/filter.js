@@ -13,7 +13,7 @@
  *
  **/
 
-import includes from 'lodash/includes'
+import includes from 'lodash.includes'
 
 import lvls from './levels'
 const levels = lvls()

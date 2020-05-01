@@ -14,7 +14,7 @@
  **/
 
 import { MD5 } from 'object-hash'
-import takeWhile from 'lodash/takeWhile'
+import takeWhile from 'lodash.takeWhile'
 
 const POLLING_INTERVAL = 5000
 
