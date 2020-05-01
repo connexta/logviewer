@@ -26,19 +26,19 @@
   },
   "dependencies": {
     "es6-promise": "3.2.1",
+    "isomorphic-fetch": "2.2.1",
     "lodash.takewhile": "4.6.0",
     "lodash.includes": "4.3.0",
+    "moment": "2.22.0",
     "object-hash": "1.1.2",
-    "random-item": "1.0.0"
+    "random-item": "1.0.0",
+    "react-redux": "6.0.0",
+    "redux": "4.0.1",
+    "redux-thunk": "2.3.0"
   },
   "peerDependencies": {
-    "isomorphic-fetch": ">=2",
-    "moment": ">=2",
     "react": ">=16",
     "react-dom": ">=16",
-    "react-redux": ">=6",
-    "redux": ">=4",
-    "redux-thunk": ">=2",
     "styled-components": ">=5"
   },
   "devDependencies": {
@@ -50,16 +50,12 @@
     "cpx": "1.5.0",
     "globstar": "1.0.0",
     "hotreloadify": "0.0.5",
-    "isomorphic-fetch": "2.2.1",
     "mkdirp": "0.5.1",
     "moment": "2.22.0",
     "node-lessify": "0.1.5",
     "react": "16.13.1",
     "react-dom": "16.13.1",
-    "react-redux": "6.0.0",
     "react-visibility-sensor": "5.0.2",
-    "redux": "4.0.1",
-    "redux-thunk": "2.3.0",
     "rimraf": "3.0.0",
     "styled-components": "5.1.0",
     "tap": "5.7.2",
