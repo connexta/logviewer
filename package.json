@@ -5,6 +5,9 @@
   "version": "0.1.0",
   "license": "LGPL-3.0",
   "main": "index.js",
+  "engines": {
+    "node": ">=0.10.5"
+  },
   "scripts": {
     "start": "hotreloadify src/main/webapp/js/index.js --proxy=https://localhost:8993 --open",
     "test": "globstar -- browserify -d ./src/test/js/*.js -o ./target/test.js && tap ./target/test.js",
@@ -50,7 +53,7 @@
     "isomorphic-fetch": "2.2.1",
     "mkdirp": "0.5.1",
     "moment": "2.22.0",
-    "node-lessify": "0.1.4",
+    "node-lessify": "0.1.5",
     "react": "16.13.1",
     "react-dom": "16.13.1",
     "react-redux": "6.0.0",
