@@ -2,7 +2,7 @@
   "name": "@connexta/logviewer",
   "author": "Codice",
   "description": "UI for viewing the Karaf Logs in the Admin UI",
-  "version": "0.2.0",
+  "version": "0.4.0",
   "license": "LGPL-3.0",
   "main": "index.js",
   "engines": {
@@ -80,6 +80,7 @@
     ]
   },
   "files": [
+    "src/main/webapp",
     "target/webapp/",
     "src/main/resources"
   ]
